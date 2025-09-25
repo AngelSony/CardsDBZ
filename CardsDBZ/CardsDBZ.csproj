@@ -71,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -82,9 +83,166 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\BITSUMIS.TTF" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardFront.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardReverse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Ball.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
