@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="CardDrop.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="ImageMaker.cs" />
     <Compile Include="Main.cs">
