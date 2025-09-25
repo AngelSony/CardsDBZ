@@ -40,5 +40,6 @@ namespace CardsDBZ
     }
     class ImageMaker
     {
+
     }
 }
