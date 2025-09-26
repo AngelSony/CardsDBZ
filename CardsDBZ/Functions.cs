@@ -42,5 +42,55 @@ namespace CardsDBZ
 
             return JsonConvert.DeserializeObject<T>(json);
         }
+        public static string GetContainerType(string pBoxName)
+        {
+            if (pBoxName.Contains("PlayerHand"))
+            {
+                return "PlayerHand";
+            }
+            else if (pBoxName.Contains("PlayerTable"))
+            {
+                return "PlayerTable";
+            }
+            else if (pBoxName.Contains("EnemyHand"))
+            {
+                return "EnemyHand";
+            }
+            else if (pBoxName.Contains("EnemyTable"))
+            {
+                return "EnemyTable";
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public static bool MovementAllowed(string source, string font)
+        {
+            if (GetContainerType(source).Equals(GetContainerType(font)))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public static int GetWorkerId(string name)
+        {
+            int i = 0;
+            while (i < 2)
+            {
+                if (name.EndsWith(i.ToString()))
+                {
+                    return i;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            return -1;
+        }
     }
 }
