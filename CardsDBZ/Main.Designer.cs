@@ -1,7 +1,7 @@
 ﻿
 namespace CardsDBZ
 {
-    partial class formMain
+    partial class Main
     {
         /// <summary>
         /// Variable del diseñador necesaria.

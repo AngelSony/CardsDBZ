@@ -16,7 +16,7 @@ namespace CardsDBZ
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formMain());
+            Application.Run(new Main());
         }
     }
 }

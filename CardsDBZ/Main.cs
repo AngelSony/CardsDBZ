@@ -10,14 +10,17 @@ using System.Windows.Forms;
 
 namespace CardsDBZ
 {
-    public partial class formMain : Form
+    public partial class Main : Form
     {
         private string playerType;
+        private Game formGame;
         private Connection conn;
         private Table table;
-        public formMain()
+        public Main()
         {
             InitializeComponent();
+
+            Fonts.LoadFonts();
 
             txtIp.Text = Connection.MyLocalIp();
             txtPort.Text = "25255";
@@ -63,7 +66,9 @@ namespace CardsDBZ
             string ip = txtIp.Text;
 
             //Open formGame
-            //this.Hide();
+            formGame = new Game(port, ip);
+            formGame.Show(this);
+            this.Hide();
         }
         private void btnHost_Click(object sender, EventArgs e)
         {
@@ -75,8 +80,8 @@ namespace CardsDBZ
             Host(port);
 
             //Open formGame
-            //formGame = new Game(port, ip);
-            //formGame.Show(this);
+            formGame = new Game(port, ip);
+            formGame.Show(this);
 
             this.Hide();
         }

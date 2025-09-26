@@ -20,7 +20,7 @@ namespace CardsDBZ
             pfc = new PrivateFontCollection();
             Assembly assembly = Assembly.GetExecutingAssembly();
 
-            Stream fontStream = assembly.GetManifestResourceStream("CartasDBZ.Resources.BITSUMIS.TTF");
+            Stream fontStream = assembly.GetManifestResourceStream("CardsDBZ.Resources.BITSUMIS.TTF");
 
             if (fontStream == null)
             {
