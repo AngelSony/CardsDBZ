@@ -52,6 +52,7 @@
     <Compile Include="Card.cs" />
     <Compile Include="CardDrop.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="ImageMaker.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -61,6 +62,7 @@
     </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
