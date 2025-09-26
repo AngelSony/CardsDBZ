@@ -14,6 +14,7 @@ namespace CardsDBZ
     {
         private string playerType;
         private Connection conn;
+        private Table table;
         public formMain()
         {
             InitializeComponent();
@@ -23,7 +24,33 @@ namespace CardsDBZ
         }
         private async Task Host(int port)
         {
+            conn = new Connection();
 
+            await Task.Run(() =>
+            {
+                int jugadores = 0;
+                while (jugadores < 2)
+                {
+                    conn.Host(port);
+                    jugadores++;
+                    Console.WriteLine("Player " + jugadores.ToString() + " connected");
+                }
+            });
+
+            MessageBox.Show("¿Iniciar juego?");
+
+            await Task.Run(() =>
+            {
+                table = new Table(conn);
+                try
+                {
+                    table.StartGame();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            });
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -43,11 +70,15 @@ namespace CardsDBZ
             playerType = "Host";
             int port = int.Parse(txtPort.Text);
             string ip = txtIp.Text;
+
             //Host game
+            Host(port);
 
             //Open formGame
+            //formGame = new Game(port, ip);
+            //formGame.Show(this);
 
-            //this.Hide();
+            this.Hide();
         }
     }
 }
