@@ -15,7 +15,6 @@ namespace CardsDBZ
         private List<Card> _AttackCards;
         private List<Card> _DefenseCards;
         private int _Damage;
-
         public Table(Connection conn)
         {
             _Conn = conn;
@@ -27,7 +26,7 @@ namespace CardsDBZ
             {
                 if (_Conn.clients[player].Connected)
                 {
-                    Message msj = _Conn.Recieve(player);
+                    Message msj = _Conn.Receive(player);
                     if (msj.ObjType.Equals(typeof(GameAction)))
                     {
                         GameAction act = ((Newtonsoft.Json.Linq.JObject)msj.Obj).ToObject<GameAction>();
